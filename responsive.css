@@ -1,4 +1,8 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
+    body {
+        background-color: #f7f7f7;
+    }
+    
     .container {
         background: transparent;
     }
@@ -32,7 +36,7 @@
     .tooltip {
     display: block;
     position: relative;
-    bottom: 1vw;
+    bottom: .6vw;
     right: 0;
     left: 75px;
     border: 0px;
