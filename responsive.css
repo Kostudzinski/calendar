@@ -1,7 +1,6 @@
 @media screen and (max-width: 480px) {
     .container {
-    height: auto;
-    min-height: 100vh;
+        background: transparent;
     }
     
     .calendar {
@@ -33,7 +32,7 @@
     .tooltip {
     display: block;
     position: relative;
-    bottom: 5px;
+    bottom: 1vw;
     right: 0;
     left: 75px;
     border: 0px;
