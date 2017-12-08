@@ -31,6 +31,18 @@ body {
     padding: 5px;
     box-shadow: 10px 10px 50px 10px #a7a7a7;
 }
+
+.glow {
+    background-image: url(img/glow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 83%;
+    width: 20vw;
+    position: absolute;
+    bottom: 5px;
+    left: 10vw;
+    z-index: 10;
+}
         
 .day {
     flex: 1;

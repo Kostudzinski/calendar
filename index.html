@@ -14,6 +14,7 @@
 <body ng-app="calendar">
     <div class="container" ng-controller="calendarController">
         <div class="calendar">
+           <div class="glow"></div>
             <span class="day" ng-class="{'today': today(day)}" ng-repeat="day in days">
                 <span class="event" ng-class="{'done': today(day)}" ng-if="dayHasEvent(day)">
                     <span ng-if="dayHasEvent(day)" class="tooltip">
