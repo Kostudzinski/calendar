@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #f4f4f4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f4f4f4, #dbdbdb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f4f4f4, #dbdbdb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f4f4f4, #dbdbdb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f4f4f4, #dbdbdb); /* Standard syntax */
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    position: absolute;
+}
+    
+
+.calendar {
+    height: 15px;
+    width: 95%;
+    background-color: #122244;
+    display: flex;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    box-shadow: 10px 10px 50px 10px #a7a7a7;
+}
+        
+.day {
+    flex: 1;
+}
+        
+.day.today {
+    height: 100%;
+    position: relative;
+    background: #6cc7ee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#6cc7ee, #386b8f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6cc7ee, #386b8f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6cc7ee, #386b8f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6cc7ee, #386b8f); /* Standard syntax */
+    border-top: 1px solid #b3eaff;
+    box-sizing: border-box;
+}
+
+.day.today:first-child  {
+    border-radius: 4px 0 0 4px;
+}
+        
+.event {
+    display: block; 
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: #122244;
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.done {
+    background: #6cc7ee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#6cc7ee, #386b8f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6cc7ee, #386b8f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6cc7ee, #386b8f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6cc7ee, #386b8f); /* Standard syntax */
+    border: 5px solid #122244;
+    box-sizing: border-box;
+}
+
+.event:hover {
+    background: #58b38d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#72d1aa, #58b38d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#72d1aa, #58b38d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#72d1aa, #58b38d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#72d1aa, #58b38d); /* Standard syntax */
+    border: 5px solid #122244;
+    box-sizing: border-box;
+}
+
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.tooltip {
+    display: none;
+    position: relative;
+    bottom: 90px;
+    right: 33px;
+    border: 1px solid #73d2ab;
+    text-align: center;
+    width: 100px;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.date {
+    font-weight: 700;
+    border-bottom: 1px solid #73d2ab;
+}
+
+.content {
+    padding: 5px;
+}
+
+.tri-down:before, .tri-down:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+}
+
+.tri-down:before {
+    bottom: -16px;
+    left: 34px;
+    border-top-color: #73d2ab;
+    border-width: 16px;
+}
+
+.tri-down:after {
+    bottom: -14px;
+    left: 35px;
+    border-top-color: #fff;
+    border-width: 15px;
+}
+        
+.event:hover .tooltip {
+    display: block;
+}
